@@ -1,0 +1,9 @@
+from dataclasses import fields
+from pyexpat import model
+from rest_framework import serializers
+from base.models import Tour
+
+class TourSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Tour
+        fields = '__all__'
